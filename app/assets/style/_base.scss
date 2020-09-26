@@ -1,0 +1,9 @@
+.content {
+  min-height: calc(100vh - 105px - 237px);
+}
+
+.btn-link,
+.btn-link:hover {
+  font-weight: 600;
+  color: $accent;
+}
