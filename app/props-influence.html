@@ -1,0 +1,112 @@
+---
+title: 餐飲的影響
+layout: ./app/layout.ejs
+engine: ejs
+current: message
+---
+
+<div class="content container-fluid">
+  <section class="row">
+    <div class="col-md-3 bg-light position-sticky">
+      <div class="list-group text-center" id="list-tab" role="tablist">
+        <a
+          class="list-group-item list-group-item-action active"
+          id="props-important-list"
+          data-toggle="list"
+          href="#props-important"
+          role="tab"
+          aria-controls="餐飲對環保的重要性"
+          title="餐飲對環保的重要性"
+          >餐飲對環保的重要性</a
+        >
+        <a
+          class="list-group-item list-group-item-action"
+          id="props-influences-list"
+          data-toggle="list"
+          href="#props-influences"
+          role="tab"
+          aria-controls="餐飲業油煙對人體的影響"
+          title="餐飲業油煙對人體的影響"
+          >餐飲業油煙對人體的影響</a
+        >
+      </div>
+    </div>
+    <div class="col-md-8">
+      <nav aria-label="breadcrumb" class="my-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a id="accesskey-main" href="#" title="中央主要內容區" accesskey="C"
+              >:::</a
+            >
+            <a href="index.html" class="text-accent" title="首頁">首頁</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="props.html" class="text-accent" title="宣導專區"
+              >宣導專區</a
+            >
+          </li>
+          <li
+            class="breadcrumb-item"
+            aria-current="page"
+            title="餐飲的影響"
+          >
+            餐飲的影響
+          </li>
+          <li
+            class="breadcrumb-item"
+            id="current-position"
+            aria-current="page"
+            title="餐飲對環保的重要性"
+          >
+            餐飲對環保的重要性
+          </li>
+        </ol>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <!-- 餐飲對環保的重要性 -->
+        <section
+          class="tab-pane mb-5 fade show active"
+          id="props-important"
+          role="tabpanel"
+          aria-labelledby="list-home-list"
+        >
+          <h1 class="border-width my-4 font-weight-bold">餐飲對環保的重要性</h1>
+          <p class="mb-5">在餐飲推行環保措施，可帶來以下益處，不僅對環境能保護有限資源，透過減少資源消耗，保護有限資源及減低污染，能夠有更美好的居住環境，並為改善全球環境問題作出貢獻。</p>
+          <div class="row">
+            <div class="col-md-6 mt-5">
+              <img class="img-fluid ic" src="./assets/images/profit.svg" alt="對餐飲的益處">
+              <h4 class="border-width my-4 font-weight-bold">對餐飲的益處</h4>
+              <p>在餐飲的籌備階段，若管理層能詳細地考慮及貫徹推行合適的環保措施，可以避免日後產生污染的問題， 亦可減少污染控制的費用支出。 實施一些節約能源、用水及物料的措施，更有助餐飲降低營運成本。</p>
+            </div>
+            <div class="col-md-6 mt-5">
+              <img class="img-fluid ic" src="./assets/images/fight.svg" alt="加強生產力及競爭力">
+              <h4 class="border-width my-4 font-weight-bold">加強生產力及競爭力</h4>
+              <p>許多環保措施可以幫助餐飲提高生產力（例如：節約能源），令餐飲較其他同業更佔競爭優勢。 此外，實施環保措施往往能改善工作環境，保障員工的健康及安全，員工亦樂於在較佳的環境下工作。</p>
+            </div>
+            <div class="col-md-6 mt-5">
+              <img class="img-fluid ic" src="./assets/images/customer.svg" alt="吸引顧客">
+              <h4 class="border-width my-4 font-weight-bold">吸引顧客</h4>
+              <p>餐飲可透過採取環保措施，向公眾展示承擔保護環境的責任，改善公司形 象。 顧客、員工、供應商及社會人士均會認同及讚揚餐飲為改善環境所作出的努力，並能維繫顧客與餐飲的良好關係。</p>
+            </div>
+            <div class="col-md-6 mt-5">
+              <img class="img-fluid ic" src="./assets/images/International.svg" alt="國際性認同">
+              <h4 class="border-width my-4 font-weight-bold">國際性認同</h4>
+              <p>優良的飲食業在保護環境方面作出的努力，不單可取得國際性的認同，更可推動旅遊業，吸引外地遊客光顧。</p>
+            </div>
+          </div>
+        </section>
+        <!-- 餐飲業油煙對人體的影響 -->
+        <section
+          class="tab-pane mb-5 fade"
+          id="props-influences"
+          role="tabpanel"
+          aria-labelledby="list-profile-list"
+        >
+          <h1 class="border-width my-4 font-weight-bold">餐飲業油煙對人體的影響</h1>
+          <p>根據英國研究報告顯示，在通風系統差、燃燒效能極低的炊具上做飯，對健康造成的損害，相等於每天吸兩包煙。這項報告還指出，廚房油煙會導致肺癌、肺炎及其他下呼吸道急病，可能引起的疾病還包括哮喘甚至白內障。油煙中所產生的丙烯醛會引發咽喉疼痛，眼睛幹澀，乏力等症狀；而過量環芳烴（PAHs）亦會導致細胞突變與誘發癌症。</p>
+          <p>廚房油煙產生的危害，主要包括以下幾個方面： 煙侵入人體呼吸道，進而引起食欲減退、心煩、精神不振、嗜睡、疲乏無力等症狀，醫學上稱為『油煙綜合症』。 廚房油煙會傷害人的感覺器官。研究顯示當食用油燒到150℃時，對鼻、眼、咽喉粘膜有較強的刺激，可引起鼻炎、咽喉炎、氣管炎等呼吸道疾病。 廚房油煙中含有一種被稱為苯並芘的致癌物，長期從事烹調的家庭主婦和長期在廚房油煙濃度高的環境下工作 的廚師，肺癌的發病率較高。 油煙對腸道、大腦神經的危害也較為明顯。 餐飲從業人員有氣喘病的情形比一般社區群體高。</p>
+        </section>
+      </div>
+    </div>
+  </section>
+</div>
