@@ -4,7 +4,7 @@ $(document).ready(() => {
     $(this).toggleClass("show");
     $(this).find(".dropdown-menu").toggleClass("show");
   })
-});
+
 //宣導專區 - 餐飲的影響 麵包削更換
 if (location.pathname === '/props-influence.html') {
   const important = document.getElementById('props-important-list');
