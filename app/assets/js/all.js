@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  // 下拉選單修正
+  //下拉選單修正
   $(".navbar-nav .nav-item").hover(function () {
     $(this).toggleClass("show");
     $(this).find(".dropdown-menu").toggleClass("show");
@@ -53,3 +53,4 @@ if (location.pathname === "/props-laws.html") {
     current.innerHTML = e.target.innerHTML;
   }
 }
+});
