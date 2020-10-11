@@ -3,60 +3,54 @@ $(document).ready(() => {
   $(".navbar-nav .nav-item").hover(function () {
     $(this).toggleClass("show");
     $(this).find(".dropdown-menu").toggleClass("show");
-  });
-  //表單無障礙提示
-
-
-  const rewriteBtn = document.getElementById("rewriteBtn");
-  const sendBtn = document.getElementById("sendBtn");
-
-
-  // const form = document.getElementById("form");
-  // const formGroup = document.querySelectorAll("form-group")
-  const name = document.getElementById("inputName");
-  const email = document.getElementById("inputEmail");
-  const tel = document.getElementById("inputTel");
-  const reason = document.getElementById("inputReason");
-  const textarea = document.getElementById("formControlTextarea");
-
-  $(rewriteBtn).on('click', () => {
-    $.each($(this).parent().siblings().find("input"), (i, val) => {
-      val.value = "";
-    });
-    $.each($(this).parent().siblings().find("textarea"), (i, val) => {
-      val.value = "";
-    })
-  });
-
-  $(sendBtn).on('click', () => {
-    // console.log($(this).parent().parent())
-    // const formData = $(this).parent().parent().serialize();
-    // console.log(formData);
-    $.ajax({
-      type: 'POST',
-      url: '../contact_form.php',
-      dataType: "json",
-      data: {
-        name: name.val()
-      },
-      success: function (response) {
-        alert(response.success);
-      },
-      error: function (xhr, status, error) {
-        console.log(xhr);
-      }
-    });
-  });
-
-
-  if (name.value === "") {
-    $(name).addClass("is-invalid");
-  } else {
-    $(name).addClass("is-valid");
-  };
-  if (email.value === "") {
-    $(email).addClass("is-invalid");
-  } else {
-    $(email).addClass("is-valid");
-  };
+  })
+});
+//宣導專區 - 餐飲的影響 麵包削更換
+if (location.pathname === '/props-influence.html') {
+  const important = document.getElementById('props-important-list');
+  const technology = document.getElementById('props-influences-list');
+  let current = document.getElementById('current-position');
+  important.addEventListener('click', ChangeBurgerMenu, false);
+  technology.addEventListener("click", ChangeBurgerMenu, false);
+  function ChangeBurgerMenu (e) {
+    current.title = e.target.innerHTML;
+    current.innerHTML = e.target.innerHTML;
+  }
+}
+//宣導專區 -  油煙異味防治 麵包削更換
+if (location.pathname === '/props-prevent.html') {
+  const countermeasure = document.getElementById('props-countermeasure-list');
+  const technology = document.getElementById('props-technology-list');
+  let current = document.getElementById('current-position');
+  countermeasure.addEventListener('click', ChangeBurgerMenu, false);
+  technology.addEventListener('click', ChangeBurgerMenu, false);
+  function ChangeBurgerMenu (e) {
+    current.title = e.target.innerHTML;
+    current.innerHTML = e.target.innerHTML;
+  }
+}
+//宣導專區 -  環保管制法規 麵包削更換
+if (location.pathname === "/props-laws.html") {
+  const airPollution = document.getElementById("props-airPollution-list");
+  const airPollutionGuidelines = document.getElementById(
+    "props-airPollutionGuidelines-list"
+  );
+  const waterPollution = document.getElementById("props-waterPollution-list");
+  const waste = document.getElementById("props-waste-list");
+  const noise = document.getElementById("props-noise-list");
+  const management = document.getElementById("props-management-list");
+  const draft = document.getElementById("props-draft-list");
+  let current = document.getElementById("current-position");
+  airPollution.addEventListener("click", ChangeBurgerMenu, false);
+  airPollutionGuidelines.addEventListener("click", ChangeBurgerMenu, false);
+  waterPollution.addEventListener("click", ChangeBurgerMenu, false);
+  waste.addEventListener("click", ChangeBurgerMenu, false);
+  noise.addEventListener("click", ChangeBurgerMenu, false);
+  management.addEventListener("click", ChangeBurgerMenu, false);
+  draft.addEventListener("click", ChangeBurgerMenu, false);
+  function ChangeBurgerMenu(e) {
+    current.title = e.target.innerHTML;
+    current.innerHTML = e.target.innerHTML;
+  }
+}
 });
