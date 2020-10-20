@@ -2,187 +2,138 @@
 title: 油煙異味防治
 layout: ./app/layout.ejs
 engine: ejs
-current: message
+current: props-prevent
 ---
 
 <div class="content container-fluid">
   <section class="row">
     <div class="col-md-3 bg-light position-sticky">
       <div class="list-group text-center" id="list-tab" role="tablist">
-        <a
-          class="list-group-item list-group-item-action active"
-          id="props-countermeasure-list"
-          data-toggle="list"
-          href="#props-countermeasure"
-          role="tab"
-          aria-controls="烹飪者的防範對策"
-          title="烹飪者的防範對策"
-          >烹飪者的防範對策</a
-        >
-        <a
-          class="list-group-item list-group-item-action"
-          id="props-technology-list"
-          data-toggle="list"
-          href="#props-technology"
-          role="tab"
-          aria-controls="硬體設備防制技術"
-          title="硬體設備防制技術"
-          >硬體設備防制技術</a
-        >
+        <a class="list-group-item list-group-item-action active" id="props-countermeasure-list" data-toggle="list"
+          href="#props-countermeasure" role="tab" aria-controls="烹飪者的防範對策" title="烹飪者的防範對策">烹飪者的防範對策</a>
+        <a class="list-group-item list-group-item-action" id="props-technology-list" data-toggle="list"
+          href="#props-technology" role="tab" aria-controls="硬體設備防制技術" title="硬體設備防制技術">硬體設備防制技術</a>
       </div>
     </div>
     <div class="col-md-8">
       <nav aria-label="breadcrumb" class="my-4">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a id="accesskey-main" href="#" title="中央主要內容區" accesskey="C"
-              >:::</a
-            >
+            <a id="accesskey-main" href="#" title="中央主要內容區" accesskey="C">:::</a>
             <a href="index.html" class="text-accent" title="首頁">首頁</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="props.html" class="text-accent" title="宣導專區"
-              >宣導專區</a
-            >
+            <a href="props.html" class="text-accent" title="宣導專區">宣導專區</a>
           </li>
           <li class="breadcrumb-item" aria-current="page" title="油煙異味防治">
             油煙異味防治
           </li>
-          <li
-            class="breadcrumb-item"
-            id="current-position"
-            aria-current="page"
-            title="烹飪者的防範對策"
-          >
+          <li class="breadcrumb-item" id="current-position" aria-current="page" title="烹飪者的防範對策">
             烹飪者的防範對策
           </li>
         </ol>
       </nav>
       <div class="tab-content" id="nav-tabContent">
         <!-- 烹飪者的防範對策 -->
-        <section
-          class="tab-pane mb-5 fade show active"
-          id="props-countermeasure"
-          role="tabpanel"
-          aria-labelledby="list-home-list"
-        >
-          <h1 class="border-width my-4 font-weight-bold">烹飪者的防範對策</h1>
-          <p class="mb-5">
+        <section class="tab-pane mb-5 fade show active" id="props-countermeasure" role="tabpanel"
+          aria-labelledby="list-home-list">
+          <h1 class="mt-5 mb-3 font-weight-normal">烹飪者的防範對策</h1>
+          <p class="mb-4">
             建議烹飪者能依循以下預防措施，可降低烹飪者自身與用餐者受油煙污染的風險。
           </p>
-          <div class="media mb-4">
+          <div class="media mb-2">
             <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
             <div class="media-body">
               <h5 class="mt-0 font-weight-bold">先開抽油煙機再烹飪</h5>
-              應先啟動抽油煙機，會使其形成一股氣流，當烹調產生油煙時，
-              油煙會順著氣流方向而被排出， 可減少油煙的逸散並降低暴露的機會。
+              <p>
+                應先啟動抽油煙機，會使其形成一股氣流，當烹調產生油煙時，
+                油煙會順著氣流方向而被排出， 可減少油煙的逸散並降低暴露的機會。
+              </p>
             </div>
           </div>
-          <div class="media mb-4">
+          <div class="media mb-2">
             <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
             <div class="media-body">
               <h5 class="mt-0 font-weight-bold">近烹調處的窗戶不要打開</h5>
-              應先啟動抽油煙機，會使其形成一股氣流，當烹調產生油煙時，
-              油煙會順著氣流方向而被排出， 可減少油煙的逸散並降低暴露的機會。
+              <p>
+                應先啟動抽油煙機，會使其形成一股氣流，當烹調產生油煙時，
+                油煙會順著氣流方向而被排出， 可減少油煙的逸散並降低暴露的機會。
+              </p>
             </div>
           </div>
-          <div class="media mb-4">
+          <div class="media mb-2">
             <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
             <div class="media-body">
               <h5 class="mt-0 font-weight-bold">炒菜油勿加熱至冒煙後再烹調</h5>
-              當食用油加熱至冒煙時，使油裂解而產生致癌物質，並提高暴露於致癌物質的風險。
+              <p>當食用油加熱至冒煙時，使油裂解而產生致癌物質，並提高暴露於致癌物質的風險。</p>
             </div>
           </div>
-          <div class="media mb-4">
+          <div class="media mb-2">
             <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
             <div class="media-body">
               <h5 class="mt-0 font-weight-bold">延長排煙時間</h5>
-              先開抽油煙機再烹飪
+              <p>先開抽油煙機再烹飪</p>
             </div>
           </div>
-          <div class="media mb-4">
+          <div class="media mb-2">
             <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
             <div class="media-body">
               <h5 class="mt-0 font-weight-bold">多使用電器產品烹調</h5>
-              建議多使用微波爐、電爐、電飯煲、電烤爐等廚房電器產品
+              <p>建議多使用微波爐、電爐、電飯煲、電烤爐等廚房電器產品</p>
             </div>
           </div>
-          <div class="media mb-4">
+          <div class="media mb-2">
             <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
             <div class="media-body">
               <h5 class="mt-0 font-weight-bold">實施禁菸政策</h5>
-              餐廳應該實施禁菸政策，以保障勞工與進餐者的建康。
+              <p>餐廳應該實施禁菸政策，以保障勞工與進餐者的建康。</p>
             </div>
           </div>
-          <div class="media mb-4">
+          <div class="media mb-2">
             <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
             <div class="media-body">
               <h5 class="mt-0 font-weight-bold">每年定期健檢</h5>
-              相關餐飲業勞工每年應需進行健康檢查，其立意良好，但是必須確實執行，尤其是胸部X光檢查。
+              <p>關餐飲業勞工每年應需進行健康檢查，其立意良好，但是必須確實執行，尤其是胸部X光檢查。</p>
             </div>
           </div>
         </section>
         <!-- 硬體設備防制技術 -->
-        <section
-          class="tab-pane mb-5 fade"
-          id="props-technology"
-          role="tabpanel"
-          aria-labelledby="list-profile-list"
-        >
-          <h1 class="border-width my-4 font-weight-bold">硬體設備防制技術</h1>
-          <div class="text-center">
-            <img
-            src="./assets/images/equipment.jpg"
-            class="img-fluid equipment-img"
-            alt="硬體設備圖"
-            />
+        <section class="tab-pane mb-5 fade" id="props-technology" role="tabpanel" aria-labelledby="list-profile-list">
+          <h1 class="mt-5 mb-3 font-weight-normal">硬體設備防制技術</h1>
+          <div class="equipment-img mx-auto">
+            <img src="./assets/images/equipment.jpg" class="img-fluid" alt="硬體設備圖" />
           </div>
           <div class="accordion" id="equipment">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                  <button
-                    class="btn btn-link btn-block text-left d-flex"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
+                  <button class="btn btn-link btn-block text-left d-flex" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     集氣設備
                   </button>
                 </h2>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse show"
-                aria-labelledby="headingOne"
-                data-parent="#equipment"
-              >
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#equipment">
                 <div class="card-body">
                   <!-- 集氣罩 -->
                   <div class="row">
-                    <div class="col-12 col-md-3">
-                      <img
-                        src="./assets/images/baffle.jpg"
-                        class="mr-3 img-fluid"
-                        alt="集氣罩"
-                      />
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/baffle.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid" alt="集氣罩" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">集氣罩</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0 mt-2">
-                          1.集氣設施之廢氣捕集速度應介於每秒1.0 至2.5公尺。
-                        </ol>
-                        <ol class="p-0 mt-2">
-                          2.集氣設施應設置瀝油槽、導油孔及集油容器及卸油口。
-                        </ol>
-                        <ol class="p-0 mt-2">
-                          3.設置能固定且易於拆換清洗之擋板或濾材過濾器。
-                        </ol>
-                      </ul>
+                    <div class="col-12 col-lg-9">
+                      <h3>集氣罩</h3>
+                      <ol class="pl-4">
+                        <li>
+                          集氣設施之廢氣捕集速度應介於每秒1.0 至2.5公尺。
+                        </li>
+                        <li>
+                          集氣設施應設置瀝油槽、導油孔及集油容器及卸油口。
+                        </li>
+                        <li>
+                          設置能固定且易於拆換清洗之擋板或濾材過濾器。
+                        </li>
+                      </ol>
                     </div>
                   </div>
                 </div>
@@ -191,97 +142,76 @@ current: message
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
-                  <button
-                    class="btn btn-link btn-block text-left collapsed"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     前處理設備
                   </button>
                 </h2>
               </div>
-              <div
-                id="collapseTwo"
-                class="collapse"
-                aria-labelledby="headingTwo"
-                data-parent="#equipment"
-              >
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#equipment">
                 <div class="card-body">
                   <!-- 擋板式 / 濾材裝置 -->
                   <div class="row">
-                    <div class="col-12 col-md-3">
-                      <div class="text-center">
-
-                        <img
-                          src="./assets/images/gasHood.jpg"
-                          class="mr-3 img-fluid"
-                          alt="擋板式 / 濾材裝置"
-                        />
-                      </div>
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/gasHood.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid" alt="擋板式 / 濾材裝置" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">擋板式 / 濾材裝置</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0">
-                          <span class="font-weight-bold">設備原理</span> : 利用慣性衝擊或濾材(濾網、吸油棉等)、直接攔截去除油 煙，主要處理粒徑大於10μm以上的顆粒來達到淨化油煙的 效果。
-                        </ol>
-                        <ol class="p-0">
+                    <div class="col-12 col-lg-9">
+                      <h3>擋板式 / 濾材裝置</h3>
+                      <ul class="list-unstyled">
+                        <li>
+                          <span class="font-weight-bold">設備原理</span> : 利用慣性衝擊或濾材(濾網、吸油棉等)、直接攔截去除油
+                          煙，主要處理粒徑大於10μm以上的顆粒來達到淨化油煙的效果。
+                        </li>
+                        <li>
                           <span class="font-weight-bold">油煙處理效率</span> : 約20~40%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">異味處理效率</span> : 約10~20%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">保養方式</span> : 每日檢視、定期清洗。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">設置費</span> : 約1~3萬。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">優點</span> : 安裝容易、成本低。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">缺點</span> : 無法去除小粒徑的油煙。
-                        </ol>
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <!-- 水洗式煙罩 -->
                   <div class="row pt-3 mt-3 border-top">
-                    <div class="col-12 col-md-3">
-                      <img
-                        src="./assets/images/Washable hood.png"
-                        class="mr-3 img-fluid"
-                        alt="水洗式煙罩"
-                      />
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/Washable hood.png" class="mb-3 mb-lg-0 mr-md-3 img-fluid" alt="水洗式煙罩" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">水洗式煙罩</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0">
+                    <div class="col-12 col-lg-9">
+                      <h3>水洗式煙罩</h3>
+                      <ul class="list-unstyled">
+                        <li>
                           <span class="font-weight-bold">設備原理</span> : 利用水霧去除油煙。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">油煙處理效率</span> : 約40~60%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">異味處理效率</span> : 約10~20%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">保養方式</span> : 每日更換循環泵用水。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">設置費</span> : 6~10萬。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">優點</span> : 安裝容易、成本低。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">缺點</span> : 無法去除小粒徑的油煙。
-                        </ol>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -291,168 +221,144 @@ current: message
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
-                  <button
-                    class="btn btn-link btn-block text-left collapsed"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     後處理設備
                   </button>
                 </h2>
               </div>
-              <div
-                id="collapseThree"
-                class="collapse"
-                aria-labelledby="headingThree"
-                data-parent="#equipment"
-              >
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#equipment">
                 <div class="card-body">
                   <!-- 靜電集塵器 -->
                   <div class="row">
-                    <div class="col-12 col-md-3">
-                      <div class="text-center">
-                        <img
-                          src="./assets/images/Electrostatic precipitator.jpg"
-                          class="mr-3 img-fluid"
-                          alt="靜電集塵器"
-                        />
-                      </div>
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/Electrostatic precipitator.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid"
+                        alt="靜電集塵器" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">靜電集塵器</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0">
+                    <div class="col-12 col-lg-9">
+                      <h3>靜電集塵器</h3>
+                      <ul class="list-unstyled">
+                        <li>
                           <span class="font-weight-bold">設備原理</span> : 利用高壓電極放電使油霧帶電後被電極板吸收而達到淨化功能。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">油煙處理效率</span> : 約70~90%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">異味處理效率</span> : 約40~60%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">保養方式</span> : 每週清理極板、每月定期清洗設備元件、每季進行設備保養維護。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">設置費</span> : 5~25萬。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">優點</span> : 有效去除小粒徑油煙、操作維護簡單占地小。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">缺點</span> : 無法去除氣態異味。
-                        </ol>
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <!-- 濕式洗滌設備 -->
                   <div class="row py-3 my-3 border-top">
-                    <div class="col-12 col-md-3">
-                      <img
-                        src="./assets/images/Wet washing equipment.jpg"
-                        class="mr-3 img-fluid"
-                        alt="濕式洗滌設備"
-                      />
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/Wet washing equipment.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid"
+                        alt="濕式洗滌設備" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">濕式洗滌設備</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0">
+                    <div class="col-12 col-lg-9">
+                      <h3>濕式洗滌設備</h3>
+                      <ul class="list-unstyled">
+                        <li>
                           <span class="font-weight-bold">設備原理</span> : 利用吸收原理，將油煙導入裝置，透過水霧吸收油煙及臭味而達到淨化功能。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">油煙處理效率</span> : 約50~80%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">異味處理效率</span> : 約30~70%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">保養方式</span> : 每月定期清洗設備元件、每周更換循環水。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">設置費</span> : 5~18萬。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">優點</span> : 安裝容易、適合大型廚房餐飲業。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">缺點</span> : 無法去除小粒徑油煙、有二次廢液問題且占地大，維護困難。
-                        </ol>
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <!-- 活性碳吸附 -->
                   <div class="row py-3 my-3 border-top">
-                    <div class="col-12 col-md-3">
-                      <img
-                        src="./assets/images/Activated carbon.jpg"
-                        class="mr-3 img-fluid"
-                        alt="活性碳吸附"
-                      />
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/Activated carbon.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid"
+                        alt="活性碳吸附" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">活性碳吸附</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0">
-                          <span class="font-weight-bold">設備原理</span> : 利用顆粒狀活性碳表面孔隙，吸附含有氣味的粒子，裝置由多層填充顆粒狀活性碳之金屬織網串聯而成或填充顆粒狀活性碳之碳塔所構成。
-                        </ol>
-                        <ol class="p-0">
+                    <div class="col-12 col-lg-9">
+                      <h3>活性碳吸附</h3>
+                      <ul class="list-unstyled">
+                        <li>
+                          <span class="font-weight-bold">設備原理</span> :
+                          利用顆粒狀活性碳表面孔隙，吸附含有氣味的粒子，裝置由多層填充顆粒狀活性碳之金屬織網串聯而成或填充顆粒狀活性碳之碳塔所構成。
+                        </li>
+                        <li>
                           <span class="font-weight-bold">油煙處理效率</span> : 約60%~90%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">異味處理效率</span> : 不建議處理油煙。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">保養方式</span> : 前端設置儲油設備，增加活性碳吸附效果，約3~6個月更換活性碳濾材。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">設置費</span> : 4~40萬。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">優點</span> : 除臭效果好、設備安裝簡單、占地較小且維護方便。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">缺點</span> : 需勤更換活性碳、操作成本高。
-                        </ol>
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <!-- 紫外光-臭氧設備 -->
                   <div class="row pt-3 mt-3 border-top">
-                    <div class="col-12 col-md-3">
-                      <img
-                        src="./assets/images/Ultraviolet-ozone equipment.jpg"
-                        class="mr-3 img-fluid"
-                        alt="紫外光-臭氧設備"
-                      />
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/Ultraviolet-ozone equipment.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid"
+                        alt="紫外光-臭氧設備" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">紫外光-臭氧設備</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0">
+                    <div class="col-12 col-lg-9">
+                      <h3>紫外光-臭氧設備</h3>
+                      <ul class="list-unstyled">
+                        <li>
                           <span class="font-weight-bold">設備原理</span> : 於風管前段裝置紫外光燈管，利用氧化反應生成臭氧及氧自由基來氧化分解油滴，達到去除油煙及異味。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">油煙處理效率</span> : 約70~90%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">異味處理效率</span> : 約40~60%。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">保養方式</span> : 每週定期擦拭燈管、老舊燈管汰換。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">設置費</span> : 2~200萬。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">優點</span> : 安裝容易，有效去除油脂及異味。
-                        </ol>
-                        <ol class="p-0">
+                        </li>
+                        <li>
                           <span class="font-weight-bold">缺點</span> : 初設置成本高、尾氣殘留臭氧異味。
-                        </ol>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -462,47 +368,32 @@ current: message
             <div class="card">
               <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
-                  <button
-                    class="btn btn-link btn-block text-left collapsed d-flex"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
+                  <button class="btn btn-link btn-block text-left collapsed d-flex" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     風車
                   </button>
                 </h2>
               </div>
-              <div
-                id="collapseFour"
-                class="collapse"
-                aria-labelledby="headingFour"
-                data-parent="#equipment"
-              >
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#equipment">
                 <div class="card-body">
                   <!-- 風車 -->
                   <div class="row">
-                    <div class="col-12 col-md-3">
-                      <img
-                        src="./assets/images/windmill.jpg"
-                        class="mr-3 img-fluid"
-                        alt="風車"
-                      />
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/windmill.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid" alt="風車" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">風車</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0 mt-2">
-                          1.風管中之排氣速度應每秒7.5公尺以上。
-                        </ol>
-                        <ol class="p-0 mt-2">
-                          2.風管轉角處設置導油及維修檢視孔。
-                        </ol>
-                        <ol class="p-0 mt-2">
-                          3.應與易燃物間保持45公分以上距離。
-                        </ol>
-                      </ul>
+                    <div class="col-12 col-lg-9">
+                      <h3>風車</h3>
+                      <ol class="pl-4">
+                        <li>
+                          風管中之排氣速度應每秒7.5公尺以上。
+                        </li>
+                        <li>
+                          風管轉角處設置導油及維修檢視孔。
+                        </li>
+                        <li>
+                          應與易燃物間保持45公分以上距離。
+                        </li>
+                      </ol>
                     </div>
                   </div>
                 </div>
@@ -511,41 +402,26 @@ current: message
             <div class="card">
               <div class="card-header" id="headingFive">
                 <h2 class="mb-0">
-                  <button
-                    class="btn btn-link btn-block text-left collapsed d-flex"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
+                  <button class="btn btn-link btn-block text-left collapsed d-flex" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     排氣口
                   </button>
                 </h2>
               </div>
-              <div
-                id="collapseFive"
-                class="collapse"
-                aria-labelledby="headingFive"
-                data-parent="#equipment"
-              >
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#equipment">
                 <div class="card-body">
                   <!-- 排氣口 -->
                   <div class="row">
-                    <div class="col-12 col-md-3">
-                      <img
-                        src="./assets/images/exhaustion hole.jpg"
-                        class="mr-3 img-fluid"
-                        alt="排氣口"
-                      />
+                    <div class="col-12 col-lg-3">
+                      <img src="./assets/images/Exhaustion hole.jpg" class="mb-3 mb-lg-0 mr-md-3 img-fluid" alt="排氣口" />
                     </div>
-                    <div class="col-12 col-md-9">
-                      <h4 class="mb-3 font-weight-bold">排氣口</h4>
-                      <ul class="m-0 p-0">
-                        <ol class="p-0 mt-2">
-                          1.廢氣排放口不得接至下水道或溝渠中。
-                        </ol>
-                      </ul>
+                    <div class="col-12 col-lg-9">
+                      <h3>排氣口</h3>
+                      <ol class="pl-4">
+                        <li>
+                          廢氣排放口不得接至下水道或溝渠中。
+                        </li>
+                      </ol>
                     </div>
                   </div>
                 </div>
