@@ -28,7 +28,21 @@ $(document).ready(() => {
     },
   });
 
-  //宣導專區 - 餐飲的影響 麵包削更換
+  //訊息專區 -  油煙相關消息 麵包屑更換
+  const information = document.getElementById("news-information-list");
+  const report = document.getElementById("news-report-list");
+
+  if (information !== null && report !== null) {
+    let current = document.getElementById("current-position");
+    information.addEventListener("click", ChangeBurgerMenu, false);
+    report.addEventListener("click", ChangeBurgerMenu, false);
+    function ChangeBurgerMenu(e) {
+      current.title = e.target.innerHTML;
+      current.innerHTML = e.target.innerHTML;
+    }
+  }
+
+  //宣導專區 - 餐飲的影響 麵包屑更換
   const important = document.getElementById("props-important-list");
   const influences = document.getElementById("props-influences-list");
 
@@ -41,7 +55,7 @@ $(document).ready(() => {
       current.innerHTML = e.target.innerHTML;
     }
   }
-  //宣導專區 -  油煙異味防治 麵包削更換
+  //宣導專區 -  油煙異味防治 麵包屑更換
   const countermeasure = document.getElementById("props-countermeasure-list");
   const technology = document.getElementById("props-technology-list");
 
@@ -54,7 +68,7 @@ $(document).ready(() => {
       current.innerHTML = e.target.innerHTML;
     }
   }
-  //宣導專區 -  環保管制法規 麵包削更換
+  //宣導專區 -  環保管制法規 麵包屑更換
   const airPollution = document.getElementById("props-airPollution-list");
   const airPollutionGuidelines = document.getElementById(
     "props-airPollutionGuidelines-list"
