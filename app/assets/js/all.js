@@ -5,6 +5,12 @@ $(document).ready(() => {
     $(this).find(".dropdown-menu").toggleClass("show");
   });
 
+
+  //停止自動輪播
+  $('.carousel').carousel({
+    interval: false
+  })
+
   //Initialize Swiper 
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
