@@ -11816,6 +11816,10 @@ a.text-accentLight:hover, a.text-accentLight:focus {
   /* Also needed for space (tweak if needed) */
 }
 
+.min-h {
+  min-height: 70vh;
+}
+
 @media (min-width: 768px) {
   .btn-md-block {
     display: block;
