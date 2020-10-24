@@ -21,6 +21,11 @@
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+//左側欄
+.min-h{
+  min-height:70vh;
+}
+
 // 最新消息 - 標題 - 閱讀更多按鈕
 @include media-breakpoint-up(md) {
   .btn-md-block {
