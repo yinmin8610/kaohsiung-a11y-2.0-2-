@@ -5,137 +5,228 @@ engine: ejs
 current: news
 ---
 
-
-
-
-<div class="content container-fluid">
-	<section class="row">
-		<div class="col-md-3 bg-light">
-			<div class="list-group mt-4 position-fixed" id="list-tab" role="tablist">
-				<a class="list-group-item list-group-item-action active" id="news-information-list" data-toggle="list"
-					href="#news-information" role="tab" aria-controls="油煙相關訊息" title="油煙相關訊息">油煙相關訊息</a>
-				<a class="list-group-item list-group-item-action" id="news-report-list" data-toggle="list" href="#news-report"
-					role="tab" aria-controls="油煙相關報導" title="油煙相關報導">油煙相關報導</a>
-			</div>
-		</div>
-		<!-- 麵包屑 -->
-		<div class="col-md-8">
-			<nav aria-label="breadcrumb" class="my-4">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item">
-						<a id="accesskey-main" href="#" title="中央主要內容區" accesskey="C">:::</a>
-						<a href="index.html" class="text-accent" title="首頁">首頁</a>
-					</li>
-					<li class="breadcrumb-item">
-						<a href="message.html" class="text-accent" title="訊息專區">訊息專區</a>
-					</li>
-					<li class="breadcrumb-item" aria-current="page" title="最新消息">
-						最新消息
-					</li>
-					<li class="breadcrumb-item" id="current-position" aria-current="page" title="油煙相關訊息">
-						油煙相關訊息
-					</li>
-				</ol>
-			</nav>
-			<!-- 主要內容 -->
-			<div class="tab-content" id="nav-tabContent">
-				<!-- 油煙相關訊息 -->
-				<section class="tab-pane mb-5 fade show active" id="news-information" role="tabpanel"
-					aria-labelledby="news-information-list">
-					<h2 class="mt-5 mb-3 font-weight-normal">油煙相關訊息</h2>
-					<!-- 108.08.27 的消息 -->
-					<article class="p-4 bg-light rounded mb-3">
-						<small class="font-italic mb-2">108-08-27</small>
-						<h2 class="text-truncate h4 mb-2">高雄市政府推動「示範觀光夜市」認證評核</h2>
-						<p class="text-mul-truncate">
-							高雄市政府在推動特色觀光、樂遊高雄之際，為建構優質夜市商圈形象並確保讓本市民眾及外縣市觀光客能玩得開心且消費得放心，今年首次由高雄市政府經濟發展局、衛生局、環境保護局、行政暨國際處等相關局處邀請本市凱旋青年及六合等
-							2 處觀光夜市管理委員會跨域合作，自 3 月起共同研商提升服務品質認證計 30
-							項指標，包括就食材製作、作業人員衛生管理、環境衛生、管委會自主管理、多元行動支付、油煙排放設施、油水及廢棄物處置、食品價格及消費資訊揭露、消費爭議處理等多面向指標，並一致共識須達各夜市總攤商數之
-							80％以上通過評核，方可成為本市「示範觀光夜市」，此次評核期間自 108 年 5 月至 7 月，經過跨局處現場聯合評核輔導與夜市管委會陪同協助，評核結果本市凱旋青年及六合等 2 處夜市共計 206
-							家夜市攤商通過取得「高雄示範觀光夜市標章」(通過率均達 96 % 以上)。
-						</p>
-						<!-- 按鈕 -->
-						<div class="d-flex justify-content-end">
-							<a class="btn btn-accentLight text-accent btn-block btn-md-block" href="news-1080827.html"
-								title="前往 108 年 08 月 27 日的最新消息" role="button">閱讀更多</a>
-						</div>
-					</article>
-					<!-- 107.11.12 的消息 -->
-					<article class="p-4 bg-light rounded p-4 mb-3">
-						<small class="font-italic mb-2">107-11-12</small>
-						<h2 class="text-truncate h4 mb-2">107 年度高雄市餐飲業空氣污染防制設施設置相關管理辦法與自主管理宣導說明會</h2>
-						<p class="text-mul-truncate">
-							高雄市一定規模餐飲業管理辦法施行至今已近一年，為確保業者更加了解管理辦法以期提升自主管理及維護效益，將提出目前較常發生未符合法規之情形，並說明本市管理辦法與環保署餐飲業空氣污染物防制設施管理辦法草案之差異，使業者在環保署草案公告施行後能順利符合法規要求。
-						</p>
-						<!-- 按鈕 -->
-						<div class="d-flex justify-content-end">
-							<a class="btn btn-accentLight text-accent btn-block btn-md-block" href="news-1071112.html"
-								title="前往 107 年 11 月 12 日的最新消息" role="button">閱讀更多</a>
-						</div>
-					</article>
-					<!-- 107.05.23 的消息 -->
-					<article class="p-4 bg-light rounded p-4 mb-3">
-						<small class="font-italic mb-2">107-05-23</small>
-						<h2 class="text-truncate h4 mb-2">環保署預告列管餐飲業以降低空污排放 高雄市一年前即啟動年減 7.4 噸 PM2.5</h2>
-						<p class="text-mul-truncate">
-							環保署今 (107) 年 5 月 17 日預告「餐飲業空氣污染物防制設施管理辦法草案」，預計將於年底擴大列管全國餐飲業；環保局表示，高雄市早在去 (106) 年 5 月 1
-							日公告施行「高雄市一定規模餐飲業空氣污染防制設施設置管理辦法」，針對燒烤、油炸料理所產生的油煙味加強管制，並已規範餐飲業防制設施的管理及維護，減少空氣汙染的排放，每年可削減 PM2.5 約 7.4
-							噸；未來也將配合環保署預告的辦法共同加強控管。
-						</p>
-						<!-- 按鈕 -->
-						<div class="d-flex justify-content-end">
-							<a class="btn btn-accentLight text-accent btn-block btn-md-block" href="news-1070523.html"
-								title="前往 107 年 05 月 23 日的最新消息" role="button">閱讀更多</a>
-						</div>
-					</article>
-					<!-- 107.05.17 的消息 -->
-					<article class="p-4 bg-light rounded p-4 mb-3">
-						<small class="font-italic mb-2">107-05-17</small>
-						<h2 class="text-truncate h4 mb-2">環保署預告訂定餐飲業空氣污染物防制設施管理辦法草案</h2>
-						<p class="text-mul-truncate">
-							環保署為達成行政院院會通過之空氣污染防制行動方案，加強管制國內餐飲業營業場所於作業期間所排放之空氣污染物對於民眾造成之影響，本次依據空氣污染防制法授權，訂定餐飲業空氣污染物防制設施管理辦法（以下簡稱本辦法），要求符合管制條件之餐飲業者，皆應裝設集氣設施、排氣管線、空氣污染防制設施及排放口等設施，藉以有效收集並處理於餐飲烹煮作業區內所產生之空氣污染物，減少對於民眾生活環境之影響改善空氣品質。
-						</p>
-						<!-- 按鈕 -->
-						<div class="d-flex justify-content-end">
-							<a class="btn btn-accentLight text-accent btn-block btn-md-block" href="news-1070517.html"
-								title="前往 107 年 05 月 17 日的最新消息" role="button">閱讀更多</a>
-						</div>
-					</article>
-					<!-- 107.04.13 的消息 -->
-					<article class="p-4 bg-light rounded p-4 mb-3">
-						<small class="font-italic mb-2">107-04-13</small>
-						<h2 class="text-truncate h4 mb-2">107 年高雄市優良餐飲業評鑑開跑囉!!</h2>
-						<p class="text-mul-truncate">
-							107 年度高雄市一定規模餐飲業輔導作業於 3 月 1 日起正式啟動，目的為使業者更加了解「高雄市一定規模餐飲業空氣污染防制設施設置管理辦法 (施行日期
-							106.10.01)」之立法精神並加速各場所符合法規規範，主要對象為設立於高雄市且符合「高雄市自治條例」與「高雄市一定規模餐飲業空氣污染防制設施設置管理辦法」中一定規模餐飲業者，均派員至現場輔導並記錄各業者油煙污染防制設施設置之情形與建置油煙各單元處理設施維護紀錄表。
-						</p>
-						<!-- 按鈕 -->
-						<div class="d-flex justify-content-end">
-							<a class="btn btn-accentLight text-accent btn-block btn-md-block" href="news-1070413.html"
-								title="前往 107 年 04 月 13 日的最新消息" role="button">閱讀更多</a>
-						</div>
-					</article>
-				</section>
-				<!-- 餐飲業油煙對人體的影響 -->
-				<section class="tab-pane mb-5 fade" id="news-report" role="tabpanel" aria-labelledby="news-report-list">
-					<h2 class="mt-5 mb-3 font-weight-normal">油煙相關報導</h2>
-					<ul class="ul-list">
-						<li><a class="text-accent" href="https://www.ettoday.net/news/20190511/1442321.htm#ixzz5p5a4uFSj"
-								title="汰換美耐皿餐具政策夜市不甩 北市府砸千萬補助淪冤大頭(另開新視窗)" target="_blank">[108.05.11] 汰換美耐皿餐具政策夜市不甩　北市府砸千萬補助淪冤大頭</a>
-						</li>
-						<li><a class="text-accent"
-								href="https://enews.epa.gov.tw/Page/3B3C62C78849F32F/2e8ee73c-c516-4de3-963b-70ba99dc91c1"
-								title="連鎖早餐店齊宣示 共創無煙用餐好環境(另開新視窗)" target="_blank">[109.04.30] 連鎖早餐店齊宣示 共創無煙用餐好環境</a></li>
-						<li><a class="text-accent"
-								href="http://technews.tw/2020/05/09/chinese-food-cooking-and-lung-cancer-in-women-nonsmokers/"
-								title="烹飪使用抽油煙機不只減少異味，還有效降低肺癌風險(另開新視窗)" target="_blank">[109.05.28] 烹飪使用抽油煙機不只減少異味，還有效降低肺癌風險</a></li>
-						<li><a class="text-accent"
-								href="https://enews.epa.gov.tw/Page/3B3C62C78849F32F/8a690f25-066b-4dfe-b7d8-fe3a99f556b8"
-								title="環保署第 2 次預告「餐飲業空氣污染防制設施管理辦法」草案 改善餐飲油煙排放(另開新視窗)" target="_blank">[109.09.18] 環保署第 2
-								次預告「餐飲業空氣污染防制設施管理辦法」草案 改善餐飲油煙排放</a></li>
-					</ul>
-				</section>
-			</div>
-		</div>
-	</section>
+<div class="content container">
+  <!-- 麵包屑 -->
+  <nav aria-label="breadcrumb" class="my-4">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a id="accesskey-main" href="#" title="中央主要內容區" accesskey="C"
+          >:::</a
+        >
+        <a href="index.html" class="text-accent" title="首頁">首頁</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="message.html" class="text-accent" title="訊息專區">訊息專區</a>
+      </li>
+      <li class="breadcrumb-item" aria-current="page" title="最新消息">
+        最新消息
+      </li>
+    </ol>
+  </nav>
+  <!-- 標題 -->
+  <section
+    class="tab-pane mb-5 fade show active"
+    id="news-information"
+    role="tabpanel"
+    aria-labelledby="news-information-list"
+  >
+    <h1 class="my-5 font-weight-normal">
+      <span class="text-primary">最新</span>消息
+    </h1>
+    <!-- 109.09.18 的連結 -->
+    <article class="p-4 bg-light rounded mb-3">
+      <small class="font-italic mb-2">109-09-18</small>
+      <h2 class="text-truncate h4 mb-2">
+        環保署第 2 次預告「餐飲業空氣污染防制設施管理辦法」草案 改善餐飲油煙排放
+      </h2>
+      <p class="text-mul-truncate">
+        環保署於109年9月10日第2次預告「餐飲業空氣污染防制設施管理辦法」草案，參考地方政府現行餐飲油煙管制相關自治條例，優先針對較大規模餐飲業進行管制，循序漸進引導餐飲業改善油煙排放，本次預告草案規劃納管全國營業規模達1,000平方公尺或300座位數以上之餐飲業，要求裝設污染防制設備並定期清潔保養、記錄防制設備操作情形，另考量部分直轄市地狹人稠，有因地制宜的管制需求，亦參考臺北市政府及新北市政府的建議，將該轄區之特定對象，分別納入規範，以有效減少油煙排放及民眾陳情。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="https://enews.epa.gov.tw/Page/3B3C62C78849F32F/8a690f25-066b-4dfe-b7d8-fe3a99f556b8"
+          title="前往 109 年 09 月 18 日的相關連結(另開新視窗)"
+          role="button"
+          target="_blank"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 109.05.28 的連結 -->
+    <article class="p-4 bg-light rounded mb-3">
+      <small class="font-italic mb-2">109-05-28</small>
+      <h2 class="text-truncate h4 mb-2">
+        烹飪使用抽油煙機不只減少異味，還有效降低肺癌風險
+      </h2>
+      <p class="text-mul-truncate">
+        抽菸及二手菸是導致肺癌最主要的因素，但台灣有許多女性雖從未吸菸卻仍然罹患肺癌，已知很大部分原因是長期暴露於廚房油煙下。最近國家衛生研究院團隊研究顯示，烹飪時使用抽油煙機可降低一半肺癌罹患風險，提醒民眾在家烹飪時一定要開抽油煙機。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="http://technews.tw/2020/05/09/chinese-food-cooking-and-lung-cancer-in-women-nonsmokers/"
+          title="前往 109 年 05 月 28 日的相關連結(另開新視窗)"
+          role="button"
+          target="_blank"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 109.04.30 的連結 -->
+    <article class="p-4 bg-light rounded mb-3">
+      <small class="font-italic mb-2">109-04-30</small>
+      <h2 class="text-truncate h4 mb-2">連鎖早餐店齊宣示 共創無煙用餐好環境</h2>
+      <p class="text-mul-truncate">
+        環保署擴大連鎖早餐店餐飲油煙輔導改善，今(27)日舉辦「連鎖早餐店油煙防制示範成果發表會」，由張子敬署長與5個連鎖早餐品牌共同簽署油煙防制自主管理宣言，展現改善油煙排放的決心，成果發表會中也表揚A-bao
+        house虎山店、紅橘子延吉店及麥味登蘆洲正和店等3家油煙防制示範店家，希望作為同業效法的對象，一起建立無油煙用餐環境。會中也播放「美好的一天，從無油煙早餐開始」宣導影片，呼籲連鎖早餐店可以落實油煙防制自主管理，定期檢視油煙收集處理設備之效能，不僅提供良好用餐環境，也可維護鄰近民眾的生活品質，另外環保署也提醒，別忘了用餐時，養成自備購物袋及餐具的習慣，一起減少塑膠廢棄物產生。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="https://enews.epa.gov.tw/Page/3B3C62C78849F32F/2e8ee73c-c516-4de3-963b-70ba99dc91c1"
+          title="前往 109 年 04 月 30 日的相關連結(另開新視窗)"
+          role="button"
+          target="_blank"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 108.08.27 的消息 -->
+    <article class="p-4 bg-light rounded mb-3">
+      <small class="font-italic mb-2">108-08-27</small>
+      <h2 class="text-truncate h4 mb-2">
+        高雄市政府推動「示範觀光夜市」認證評核
+      </h2>
+      <p class="text-mul-truncate">
+        高雄市政府在推動特色觀光、樂遊高雄之際，為建構優質夜市商圈形象並確保讓本市民眾及外縣市觀光客能玩得開心且消費得放心，今年首次由高雄市政府經濟發展局、衛生局、環境保護局、行政暨國際處等相關局處邀請本市凱旋青年及六合等
+        2 處觀光夜市管理委員會跨域合作，自 3 月起共同研商提升服務品質認證計 30
+        項指標，包括就食材製作、作業人員衛生管理、環境衛生、管委會自主管理、多元行動支付、油煙排放設施、油水及廢棄物處置、食品價格及消費資訊揭露、消費爭議處理等多面向指標，並一致共識須達各夜市總攤商數之
+        80％以上通過評核，方可成為本市「示範觀光夜市」，此次評核期間自 108 年 5
+        月至 7
+        月，經過跨局處現場聯合評核輔導與夜市管委會陪同協助，評核結果本市凱旋青年及六合等
+        2 處夜市共計 206 家夜市攤商通過取得「高雄示範觀光夜市標章」(通過率均達
+        96 % 以上)。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="news-1080827.html"
+          title="前往 108 年 08 月 27 日的最新消息"
+          role="button"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 108.05.11 的連結 -->
+    <article class="p-4 bg-light rounded mb-3">
+      <small class="font-italic mb-2">108-05-11</small>
+      <h2 class="text-truncate h4 mb-2">
+        汰換美耐皿餐具政策夜市不甩　北市府砸千萬補助淪冤大頭
+      </h2>
+      <p class="text-mul-truncate">
+        由於美耐皿餐具裝盛熱食時會釋放三聚氰胺等有害物質，北市府自105年開始就陸續要求市場和夜市進行汰換；但沒想到，號稱汰換率高達93%的南機場夜市，竟仍隨處可見攤商使用美耐皿餐具、一次性餐具等，引來議員質疑，市府砸2千多萬補助攤商換餐具根本是當冤大頭。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="https://www.ettoday.net/news/20190511/1442321.htm#ixzz5p5a4uFSj"
+          title="前往 108 年 05 月 11 日的相關連結(另開新視窗)"
+          target="_blank"
+          role="button"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 107.11.12 的消息 -->
+    <article class="p-4 bg-light rounded p-4 mb-3">
+      <small class="font-italic mb-2">107-11-12</small>
+      <h2 class="text-truncate h4 mb-2">
+        107 年度高雄市餐飲業空氣污染防制設施設置相關管理辦法與自主管理宣導說明會
+      </h2>
+      <p class="text-mul-truncate">
+        高雄市一定規模餐飲業管理辦法施行至今已近一年，為確保業者更加了解管理辦法以期提升自主管理及維護效益，將提出目前較常發生未符合法規之情形，並說明本市管理辦法與環保署餐飲業空氣污染物防制設施管理辦法草案之差異，使業者在環保署草案公告施行後能順利符合法規要求。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="news-1071112.html"
+          title="前往 107 年 11 月 12 日的最新消息"
+          role="button"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 107.05.23 的消息 -->
+    <article class="p-4 bg-light rounded p-4 mb-3">
+      <small class="font-italic mb-2">107-05-23</small>
+      <h2 class="text-truncate h4 mb-2">
+        環保署預告列管餐飲業以降低空污排放 高雄市一年前即啟動年減 7.4 噸 PM2.5
+      </h2>
+      <p class="text-mul-truncate">
+        環保署今 (107) 年 5 月 17
+        日預告「餐飲業空氣污染物防制設施管理辦法草案」，預計將於年底擴大列管全國餐飲業；環保局表示，高雄市早在去
+        (106) 年 5 月 1
+        日公告施行「高雄市一定規模餐飲業空氣污染防制設施設置管理辦法」，針對燒烤、油炸料理所產生的油煙味加強管制，並已規範餐飲業防制設施的管理及維護，減少空氣汙染的排放，每年可削減
+        PM2.5 約 7.4 噸；未來也將配合環保署預告的辦法共同加強控管。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="news-1070523.html"
+          title="前往 107 年 05 月 23 日的最新消息"
+          role="button"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 107.05.17 的消息 -->
+    <article class="p-4 bg-light rounded p-4 mb-3">
+      <small class="font-italic mb-2">107-05-17</small>
+      <h2 class="text-truncate h4 mb-2">
+        環保署預告訂定餐飲業空氣污染物防制設施管理辦法草案
+      </h2>
+      <p class="text-mul-truncate">
+        環保署為達成行政院院會通過之空氣污染防制行動方案，加強管制國內餐飲業營業場所於作業期間所排放之空氣污染物對於民眾造成之影響，本次依據空氣污染防制法授權，訂定餐飲業空氣污染物防制設施管理辦法（以下簡稱本辦法），要求符合管制條件之餐飲業者，皆應裝設集氣設施、排氣管線、空氣污染防制設施及排放口等設施，藉以有效收集並處理於餐飲烹煮作業區內所產生之空氣污染物，減少對於民眾生活環境之影響改善空氣品質。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="news-1070517.html"
+          title="前往 107 年 05 月 17 日的最新消息"
+          role="button"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+    <!-- 107.04.13 的消息 -->
+    <article class="p-4 bg-light rounded p-4 mb-3">
+      <small class="font-italic mb-2">107-04-13</small>
+      <h2 class="text-truncate h4 mb-2">107 年高雄市優良餐飲業評鑑開跑囉!!</h2>
+      <p class="text-mul-truncate">
+        107 年度高雄市一定規模餐飲業輔導作業於 3 月 1
+        日起正式啟動，目的為使業者更加了解「高雄市一定規模餐飲業空氣污染防制設施設置管理辦法
+        (施行日期
+        106.10.01)」之立法精神並加速各場所符合法規規範，主要對象為設立於高雄市且符合「高雄市自治條例」與「高雄市一定規模餐飲業空氣污染防制設施設置管理辦法」中一定規模餐飲業者，均派員至現場輔導並記錄各業者油煙污染防制設施設置之情形與建置油煙各單元處理設施維護紀錄表。
+      </p>
+      <!-- 按鈕 -->
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn btn-accentLight text-accent btn-block btn-md-block"
+          href="news-1070413.html"
+          title="前往 107 年 04 月 13 日的最新消息"
+          role="button"
+          >閱讀更多</a
+        >
+      </div>
+    </article>
+  </section>
 </div>
