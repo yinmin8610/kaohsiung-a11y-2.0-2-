@@ -28,20 +28,6 @@ $(document).ready(() => {
     },
   });
 
-  //訊息專區 -  油煙相關消息 麵包屑更換
-  const information = document.getElementById("news-information-list");
-  const report = document.getElementById("news-report-list");
-
-  if (information !== null && report !== null) {
-    let current = document.getElementById("current-position");
-    information.addEventListener("click", ChangeBurgerMenu, false);
-    report.addEventListener("click", ChangeBurgerMenu, false);
-    function ChangeBurgerMenu(e) {
-      current.title = e.target.innerHTML;
-      current.innerHTML = e.target.innerHTML;
-    }
-  }
-
   //宣導專區 - 餐飲的影響 麵包屑更換
   const important = document.getElementById("props-important-list");
   const influences = document.getElementById("props-influences-list");
