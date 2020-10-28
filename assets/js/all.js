@@ -25,36 +25,20 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
-  }); //訊息專區 -  油煙相關消息 麵包屑更換
+  }); //宣導專區 - 餐飲的影響 麵包屑更換
 
-  var information = document.getElementById("news-information-list");
-  var report = document.getElementById("news-report-list");
+  var important = document.getElementById("props-important-list");
+  var influences = document.getElementById("props-influences-list");
 
-  if (information !== null && report !== null) {
+  if (important !== null && influences !== null) {
     var ChangeBurgerMenu = function ChangeBurgerMenu(e) {
       current.title = e.target.innerHTML;
       current.innerHTML = e.target.innerHTML;
     };
 
     var current = document.getElementById("current-position");
-    information.addEventListener("click", ChangeBurgerMenu, false);
-    report.addEventListener("click", ChangeBurgerMenu, false);
-  } //宣導專區 - 餐飲的影響 麵包屑更換
-
-
-  var important = document.getElementById("props-important-list");
-  var influences = document.getElementById("props-influences-list");
-
-  if (important !== null && influences !== null) {
-    var _ChangeBurgerMenu = function _ChangeBurgerMenu(e) {
-      _current.title = e.target.innerHTML;
-      _current.innerHTML = e.target.innerHTML;
-    };
-
-    var _current = document.getElementById("current-position");
-
-    important.addEventListener("click", _ChangeBurgerMenu, false);
-    influences.addEventListener("click", _ChangeBurgerMenu, false);
+    important.addEventListener("click", ChangeBurgerMenu, false);
+    influences.addEventListener("click", ChangeBurgerMenu, false);
   } //宣導專區 -  油煙異味防治 麵包屑更換
 
 
@@ -62,15 +46,15 @@ $(document).ready(function () {
   var technology = document.getElementById("props-technology-list");
 
   if (countermeasure !== null && technology !== null) {
-    var _ChangeBurgerMenu2 = function _ChangeBurgerMenu2(e) {
-      _current2.title = e.target.innerHTML;
-      _current2.innerHTML = e.target.innerHTML;
+    var _ChangeBurgerMenu = function _ChangeBurgerMenu(e) {
+      _current.title = e.target.innerHTML;
+      _current.innerHTML = e.target.innerHTML;
     };
 
-    var _current2 = document.getElementById("current-position");
+    var _current = document.getElementById("current-position");
 
-    countermeasure.addEventListener("click", _ChangeBurgerMenu2, false);
-    technology.addEventListener("click", _ChangeBurgerMenu2, false);
+    countermeasure.addEventListener("click", _ChangeBurgerMenu, false);
+    technology.addEventListener("click", _ChangeBurgerMenu, false);
   } //宣導專區 -  環保管制法規 麵包屑更換
 
 
@@ -78,9 +62,9 @@ $(document).ready(function () {
   var airPollutionGuidelines = document.getElementById("props-airPollutionGuidelines-list");
 
   if (airPollution !== null && airPollutionGuidelines !== null) {
-    var _ChangeBurgerMenu3 = function _ChangeBurgerMenu3(e) {
-      _current3.title = e.target.innerHTML;
-      _current3.innerHTML = e.target.innerHTML;
+    var _ChangeBurgerMenu2 = function _ChangeBurgerMenu2(e) {
+      _current2.title = e.target.innerHTML;
+      _current2.innerHTML = e.target.innerHTML;
     };
 
     var waterPollution = document.getElementById("props-waterPollution-list");
@@ -89,15 +73,15 @@ $(document).ready(function () {
     var management = document.getElementById("props-management-list");
     var draft = document.getElementById("props-draft-list");
 
-    var _current3 = document.getElementById("current-position");
+    var _current2 = document.getElementById("current-position");
 
-    airPollution.addEventListener("click", _ChangeBurgerMenu3, false);
-    airPollutionGuidelines.addEventListener("click", _ChangeBurgerMenu3, false);
-    waterPollution.addEventListener("click", _ChangeBurgerMenu3, false);
-    waste.addEventListener("click", _ChangeBurgerMenu3, false);
-    noise.addEventListener("click", _ChangeBurgerMenu3, false);
-    management.addEventListener("click", _ChangeBurgerMenu3, false);
-    draft.addEventListener("click", _ChangeBurgerMenu3, false);
+    airPollution.addEventListener("click", _ChangeBurgerMenu2, false);
+    airPollutionGuidelines.addEventListener("click", _ChangeBurgerMenu2, false);
+    waterPollution.addEventListener("click", _ChangeBurgerMenu2, false);
+    waste.addEventListener("click", _ChangeBurgerMenu2, false);
+    noise.addEventListener("click", _ChangeBurgerMenu2, false);
+    management.addEventListener("click", _ChangeBurgerMenu2, false);
+    draft.addEventListener("click", _ChangeBurgerMenu2, false);
   }
 });
 //# sourceMappingURL=all.js.map
